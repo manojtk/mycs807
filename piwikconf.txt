@@ -1,0 +1,15 @@
+var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var useridname = document.getElementsByTagName("head")[0].getAttribute("data-user");
+    var u="//www.picloud.mooo.org/analytics/";
+    _paq.push(['setTrackerUrl', u+'Piwik.php']);
+    _paq.push(['getVisitorInfo',]);
+    _paq.push(['setSiteId', 1]);
+    _paq.push(['setUserId', useridname]);
+    _paq.push(['getUserId']);
+    _paq.push(['setDownloadClasses',['action-download']]);
+    _paq.push(['discardHashTag', 'FALSE']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'Piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
